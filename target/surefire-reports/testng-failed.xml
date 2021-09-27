@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Get Api suites]" parallel="tests">
+  <listeners>
+    <listener class-name="listeners.MethodIntercepter"/>
+  </listeners>
+  <test name="login_suite(failed)" parallel="methods">
+    <classes>
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="login1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+    </classes>
+  </test> <!-- login_suite(failed) -->
+</suite> <!-- Failed suite [Get Api suites] -->
