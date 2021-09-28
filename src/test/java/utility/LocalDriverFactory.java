@@ -72,7 +72,7 @@ public class LocalDriverFactory {
 			 break;
 
 		 case "grid_chrome":
-			 WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
 			//Copy drivers/chrome/chromedriver to /usr/local/bin/ on node machine
 			 DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			 capabilities.setBrowserName("chrome");

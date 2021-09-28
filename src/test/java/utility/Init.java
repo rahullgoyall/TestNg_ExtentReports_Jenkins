@@ -22,7 +22,7 @@ public class Init {
 
 	@BeforeMethod
 	public void setUp(ITestContext testContext){
-	    driver = LocalDriverFactory.createInstance("grid_chrome", "http://google.com");	
+	    driver = LocalDriverFactory.createInstance("grid_firefox", "http://google.com");	
 	}
 	
 	@AfterMethod
